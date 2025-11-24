@@ -21,7 +21,7 @@ library(ggeffects); library(sjPlot); library(MuMIn)
 library(dplyr); library(glmmTMB); library(binom); library(broom.mixed); library(tidyr)
 
 # Import data
-data <- read_excel("G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/sheet_all_data_statistic_discovery.xlsx")
+data <- read_excel("C:/r_studio/statistic_data.xlsx")
 
 # Preparing the dataset ----------------------------------------------
 required_cols <- c("event_use","distance_km","colony","release_batch","release_point")
@@ -146,6 +146,7 @@ if (is.finite(delta) && delta < -2) {
 } else {
   cat("→ Sem melhora clara de AICc. Interprete como declínio contínuo.\n")
 }
+
 
 
 
