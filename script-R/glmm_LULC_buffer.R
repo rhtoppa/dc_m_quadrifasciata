@@ -22,8 +22,8 @@ library(DHARMa); library(broom.mixed); library(performance); library(ggplot2)
 library(stringr); library(scales); library(readr)
 
 # Adjust the parameters for data input and output --------------------------------------------------------------
-xlsx   <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/sheet_all_data_statistic_discovery.xlsx"
-OUTDIR <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/outputs_buffer_glmm"
+xlsx   <- "C:/r_studio/statistic_data.xlsx"
+OUTDIR <- "C:/r_studio/buffer_glmm"
 if (!dir.exists(OUTDIR)) dir.create(OUTDIR, recursive = TRUE)
 
 # Read data and minimum typing -------------------------------------------
@@ -144,4 +144,5 @@ ggsave(file.path(OUTDIR,"forest_OR_BUFFER_logscale.png"), p_forest, width=7.5, h
 print(p_forest)
 
 cat("\nArquivos salvos em:\n", OUTDIR, "\n")
+
 
