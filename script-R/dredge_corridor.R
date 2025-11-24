@@ -23,8 +23,8 @@ library(DHARMa); library(broom.mixed); library(performance); library(ggplot2)
 library(stringr); library(ggeffects); library(scales)
 
 # Adjust the parameters for data input and output --------------------------------------------------------------
-xlsx   <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/sheet_all_data_statistic_discovery.xlsx"
-OUTDIR <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/outputs"
+xlsx   <- "C:/r_studio/statistic_data.xlsx"
+OUTDIR <- "C:/r_studio/dredge_corridor"
 if (!dir.exists(OUTDIR)) dir.create(OUTDIR, recursive = TRUE)
 
 # Read data and minimum typing -------------------------------------------
@@ -187,5 +187,6 @@ suppressWarnings({
 })
 
 cat("\nArquivos gerados em:\n", OUTDIR, "\n")
+
 
 
